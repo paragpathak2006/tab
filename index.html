@@ -66,9 +66,9 @@
           var spot1 = "spot1";
           var spot2 = "spot2";
           fullscreenButton.onclick = () => { unityInstance.SetFullscreen(1);};
-          buttonbox1.onclick = () => {  unityInstance.SendMessage('Main Camera','setWebGLStartingPos',spot1); };
-          buttonbox2.onclick = () => {  unityInstance.SendMessage('Main Camera','setWebGLStartingPos',spot2); };
-          buttonbox3.onclick = () => {  unityInstance.SendMessage('Main Camera','setWebGLStartingPos',"origin"); };
+          buttonbox1.onclick = () => {  unityInstance.SendMessage('MainCamera','setWebGLStartingPos',spot1); };
+          buttonbox2.onclick = () => {  unityInstance.SendMessage('MainCamera','setWebGLStartingPos',spot2); };
+          buttonbox3.onclick = () => {  unityInstance.SendMessage('MainCamera','setWebGLStartingPos',"origin"); };
         }).catch((message) => {
           alert(message);
         });
